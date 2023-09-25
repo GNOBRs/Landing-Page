@@ -1,0 +1,91 @@
+:root {
+    --bg-body: #1B2838;
+    --bg-navbar: #171D25;
+    --font-color: #E6E6E6;
+    --font-color-active: #199fff;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 3rem;
+    background-color: var(--bg-body);
+    color: var(--font-color);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.botao-menu {
+    color: var(--font-color);
+}
+
+.botao-menu--ativo {
+    color: var(--font-color-active);
+}
+
+.navbar {
+    background-color: var(--bg-navbar);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: auto;
+    position: sticky;
+    top: 0;
+}
+
+.navbar_img {
+    height: 50px;
+    width: 50px;
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-navbar);
+    width: 75vw;
+    height: 100vh;
+    position: fixed;
+    left: -100vw;
+    transition: .2s;
+}
+
+.menu-lateral--item {
+    margin: 2.3rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--font-color);
+}
+
+.menu-lateral--item--ativo {
+    color: var(--font-color-active);
+}
+
+.menu-lateral--ativo {
+    left: 0;
+    transition: .25s;
+    position: fixed;
+}
+
+.footer {
+    background-color: var(--bg-navbar);
+    text-align: center;
+    height: 3vh;
+    padding: 1vh;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+@media screen and (min-width: 720px) {
+    .footer {
+        height: 2vh;
+        padding: 1vh;
+    }
+}
