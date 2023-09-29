@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <i class="fa-solid fa-bars" id="botao" class="botao-menu"></i>
+        <img class="navbar_img" src="assets/logo.svg" alt="Logo">
+        <br>
+    </nav>
+    <div class="menu-lateral">
+        <img class="navbar_img menu-lateral--item" src="assets/logo.svg" alt="Logo">
+        <a class="menu-lateral--item" href="index.html">HOME</a>
+        <a class="menu-lateral--item" href="sobre.html">SOBRE</a>
+        <a class="menu-lateral--item" href="curriculo.html">CURRÍCULO</a>
+        <a class="menu-lateral--item" href="servicos.html">SERVIÇOS</a>
+        <a class="menu-lateral--item menu-lateral--item--ativo" href="contato.html">CONTATO</a>
+    </div>
+    <section class="content">
+        <section>
+            <h1 class="title">Métodos de contato</h1>
+            <div class="contato-align">
+                <a class="link" href="http://">Linkedin: Bruno Bossois Hohmann <i class="fa-brands fa-linkedin"></i></a>
+                <a class="link" href="http://">Email: gnobr1@gmail.com <i class="fa-solid fa-envelope"></i></a>
+                <a class="link" href="http://">GitHub: GNOBRs <i class="fa-brands fa-github"></i></a>
+            </div>
+        </section>
+        <section class="content">
+            <h1 class="title">Entrar em contato</h1>
+            <form class="form-align" action="">
+                <div class="input input-spacing">
+                    <label for="name">Nome Completo:</label>
+                    <input class="input-text" type="text" name="name" placeholder="Digite seu nome aqui" required>
+                </div>
+                <div class="input input-spacing">
+                    <label for="mail">Email:</label>
+                    <input class="input-text" type="email" name="mail" placeholder="Digite seu email aqui" required>
+                </div>
+                <div class="input input-spacing">
+                    <label for="fone">Telefone:</label>
+                    <input class="input-text" type="tel" name="fone" placeholder="Digite seu telefone aqui" required>
+                </div>
+                <div class="input-spacing">
+                    <input class="input-radio" type="radio" name="person" value="fisica" required>
+                    <label for="person">Pessoa Física</label>
+                    <input class="input-radio" type="radio" name="person" value="juridica" required>
+                    <label for="person">Pessoa Jurídica</label>
+                </div>
+                <div class="input-spacing">
+                    <label for="time">Melhor horário para contato:</label>
+                    <input class="input-time" type="time" name="time" id="" required>
+                </div>
+                <div class="input-spacing">
+                    <h1>Selecione o tipo de página que deseja contratar:</h1>
+                    <input class="input-checkbox" type="checkbox" name="estatica" id="" required>
+                    <label for="estatica">Página Estática</label>
+                    <br>
+                    <input class="input-checkbox" type="checkbox" name="dinamica" id="" required>
+                    <label for="dinamica">Página Dinâmica</label>
+                    <br>
+                    <input class="input-checkbox" type="checkbox" name="avancada" id="" required>
+                    <label for="avancada">Página Avançada</label>
+                </div>
+                <div class="input-spacing">
+                    <label for="descricao">Descreva o motivo para entrar em contato:</label><br>
+                    <textarea class="input-textarea" name="descricao" id="" cols="30" rows="5"
+                        placeholder="..."></textarea>
+                </div>
+                <input class="submit" type="submit" value="Enviar">
+            </form>
+        </section>
+    </section>
+    <footer class="footer">
+        <div class="footer_content">Bruno Bossois Hohmann Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/f993179993.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

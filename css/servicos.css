@@ -1,0 +1,10 @@
+table,
+tr,
+th {
+    border: 1px solid;
+    padding: 1rem;
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
