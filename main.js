@@ -9,3 +9,7 @@ const AbreMenu = () => {
 const click_botao = document.querySelector("#botao")
 
 click_botao.addEventListener("click", AbreMenu)
+
+const musica = document.querySelector("[data-audio]")
+
+musica.volume = 0.5

@@ -21,6 +21,13 @@ body {
     line-height: 1.4rem;
 }
 
+audio {
+    position: sticky;
+    top: 50px;
+    z-index: 1;
+    background-color: rgba(15, 15, 15, 0);
+}
+
 .botao-menu {
     color: var(--font-color);
 }
@@ -55,6 +62,7 @@ body {
     position: fixed;
     left: -100vw;
     transition: .35s;
+    z-index: 2;
 }
 
 .menu-lateral--item {
@@ -62,6 +70,10 @@ body {
     text-decoration: none;
     font-weight: bold;
     color: var(--font-color);
+}
+
+img.menu-lateral--item {
+    display: none;
 }
 
 .menu-lateral--item--ativo {
@@ -89,10 +101,28 @@ body {
     margin: 1rem;
 }
 
+.list {
+    list-style: disc;
+    padding-left: 1.2rem;
+}
+
+.list--item {
+    margin-bottom: 1rem;
+}
+
+.container--video {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.video {
+    width: 90%;
+    margin: 1rem;
+}
+
 .footer {
     background-color: var(--bg-navbar);
     text-align: center;
-    padding: 0 auto;
     position: absolute;
     right: 0;
     left: 0;
@@ -100,7 +130,55 @@ body {
     padding: .4rem;
 }
 
+@media screen and (orientation:landscape) {
+    /* .menu-lateral--ativo {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .menu-lateral--item {
+        flex-grow: 1;
+        flex-basis: 200;
+    } */
+
+    /* .menu-lateral--item {
+        display: none;
+    } */
+
+    .menu-lateral--ativo {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 40%;
+        width: 100%;
+    }
+
+    .menu-lateral--item {
+        margin: 1rem;
+    }
+}
+
 @media screen and (min-width: 720px) {
+    audio {
+        top: 0vh;
+        left: 10rem;
+    }
+
+    .menu-lateral--ativo {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    img.menu-lateral--item {
+        display: inline;
+    }
+
+    .menu-lateral--item {
+        margin: 2rem;
+    }
+
     .content {
         margin: 5rem 5rem 5rem 12rem;
     }
@@ -110,9 +188,16 @@ body {
     }
 
     .menu-lateral {
+        flex-direction: column;
         top: 0;
         bottom: 0;
         left: 0;
-        width: 7rem;
+        width: 10rem;
+        height: 100%;
+    }
+
+    .video {
+        width: 560px;
+        height: 315px;
     }
 }

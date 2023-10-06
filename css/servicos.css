@@ -1,6 +1,7 @@
 table,
 tr,
-th {
+th,
+td {
     border: 1px solid;
     padding: 1rem;
     width: 40%;

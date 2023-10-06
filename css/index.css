@@ -6,3 +6,17 @@
     display: block;
     margin: 1rem auto;
 }
+
+.container--video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 720px) {
+    .body_img {
+        height: 15rem;
+        width: 15rem;
+    }
+
+}
