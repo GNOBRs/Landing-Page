@@ -13,7 +13,6 @@ click_botao.addEventListener("click", AbreMenu)
 const musica = document.querySelector("#audio")
 
 musica.volume = 0.5
-musica.play()
 
 const TocarMusica = () => {
     if (document.querySelector("#audio").paused == true) {
