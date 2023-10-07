@@ -21,11 +21,16 @@ body {
     line-height: 1.4rem;
 }
 
-audio {
+.musica {
     position: sticky;
-    top: 50px;
+    top: 60px;
+    padding-left: 20px;
+}
+
+.botao_audio {
     z-index: 1;
-    background-color: rgba(15, 15, 15, 0);
+    color: var(--font-color);
+    font-size: 2rem;
 }
 
 .botao-menu {
@@ -161,9 +166,9 @@ img.menu-lateral--item {
 }
 
 @media screen and (min-width: 720px) {
-    audio {
-        top: 0vh;
-        left: 10rem;
+    .musica {
+        top: 20px;
+        padding-left: 13rem;
     }
 
     .menu-lateral--ativo {
